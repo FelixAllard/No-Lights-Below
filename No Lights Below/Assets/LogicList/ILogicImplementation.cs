@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using UniversalLogic.Results;
 
-
-namespace LogicList.BackLogic
+namespace LogicList
 {
     public interface ILogicImplementation
     {

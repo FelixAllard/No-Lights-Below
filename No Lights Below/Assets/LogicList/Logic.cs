@@ -6,11 +6,11 @@ namespace LogicList
     { 
         protected Logic(LogicHandler logicHandler)
         {
-            this.LogicHandler = logicHandler;
+            this._logicHandler = logicHandler;
             _uuid = Guid.NewGuid().ToString();
         }
 
-        public LogicHandler LogicHandler;
+        private readonly LogicHandler _logicHandler;
         public abstract string Name { get; }
         private string _uuid;
         public abstract string Description { get; }
@@ -20,7 +20,7 @@ namespace LogicList
         
         public void RemoveLogicFromHandler()
         {
-            LogicHandler.RemoveLogic(this);
+            _logicHandler.RemoveLogic(this);
         }
 
         public string GetUniqueUuid()

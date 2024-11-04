@@ -1,6 +1,6 @@
 using System;
 
-namespace LogicList.BackLogic.Exceptions
+namespace LogicList.Exceptions
 {
     public class AlreadyExistingLogic : Exception
     {

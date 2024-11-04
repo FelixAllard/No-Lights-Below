@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using LogicList.BackLogic;
 using LogicList.BackLogic.Exceptions;
+using LogicList.Exceptions;
 using UniversalLogic.Results;
 
 namespace LogicList
@@ -34,7 +35,7 @@ namespace LogicList
             return new OperationResult(true, "Successfully added logic.");
         }
         
-
+    
         public OperationResult AddLogics(List<Logic> logic)
         {
             try
