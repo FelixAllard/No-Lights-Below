@@ -1,0 +1,6 @@
+{
+  "name": "Network",
+  "references": [
+    "Unity.Netcode.Runtime"
+  ]
+}
