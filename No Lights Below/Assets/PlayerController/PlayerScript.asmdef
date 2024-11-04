@@ -1,0 +1,8 @@
+{
+  "name": "PlayerScript",
+  "autoReferenced": true,
+  "references": [
+    "Unity.Netcode.Runtime",
+    "LogicList"
+  ]
+}
