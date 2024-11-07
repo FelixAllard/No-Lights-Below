@@ -1,0 +1,16 @@
+{
+    "name": "ScriptableObjectEditor",
+    "rootNamespace": "",
+    "references": ["GUID:53a818ee7b272fb438b40cb56a93112a"],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

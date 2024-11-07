@@ -22,6 +22,28 @@ namespace Network
             NetworkManager.Singleton.StartClient();
             Debug.Log("Started Client");
         }
+        private void OnEnable()
+        {
+            NetworkManager.Singleton.OnClientConnectedCallback += ClientConnected;
+            NetworkManager.Singleton.OnClientDisconnectCallback += ClientDisconnected;
+        }
+
+        private void OnDisable()
+        {
+            NetworkManager.Singleton.OnClientConnectedCallback -= ClientConnected;
+            NetworkManager.Singleton.OnClientDisconnectCallback -= ClientDisconnected;
+        }
+
+        private void ClientConnected(ulong clientId)
+        {
+            Debug.Log($"Client connected: {clientId}");
+        }
+
+        private void ClientDisconnected(ulong clientId)
+        {
+            Debug.Log($"Client disconnected: {clientId}");
+        }
+
     }
 
 }
